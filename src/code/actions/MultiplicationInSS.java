@@ -3,7 +3,9 @@ package code.actions;
 /**
  * Created by Артем on 07.03.2016.
  */
-public class MultiplicationInSS extends AdditionInSS {
+public class MultiplicationInSS extends ActionInSS {
+
+    AdditionInSS addAction = null;
 
     public MultiplicationInSS() {
         super();
@@ -15,6 +17,9 @@ public class MultiplicationInSS extends AdditionInSS {
 
     @Override
     protected String calculateWithValidArgs(String arg1, String arg2) {
+        if (addAction == null)
+            addAction = new AdditionInSS(ss);
+
         char[] x = arg1.toCharArray(), y = arg2.toCharArray();
         String result = "0";
         StringBuilder tempRes;
@@ -33,7 +38,7 @@ public class MultiplicationInSS extends AdditionInSS {
                 tempRes.insert(0, characters.charAt(pl));
             }
             appendZeroes(tempRes, y.length - i - 1);
-            result = super.calculateWithValidArgs(result, tempRes.toString());
+            result = addAction.calculateWithValidArgs(result, tempRes.toString());
         }
 
         return result;

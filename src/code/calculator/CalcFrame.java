@@ -126,7 +126,7 @@ public class CalcFrame extends JFrame {
                 public void insertString(int offs, String str, AttributeSet a) throws BadLocationException {
                     String text = tf.getText() + str;
                     if (text == null || text.length() == 0 || action.isValid(text)) {
-                        super.insertString(offs, str, a);
+                        super.insertString(offs, str.toUpperCase(), a);
                     }
                 }
             });
