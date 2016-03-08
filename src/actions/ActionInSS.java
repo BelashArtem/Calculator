@@ -95,7 +95,7 @@ public abstract class ActionInSS {
      * @param s операнд
      * @throws IllegalArgumentException не валидный операнд
      */
-    private void validate(String s) throws IllegalArgumentException {
+    protected void validate(String s) throws IllegalArgumentException {
         if (s == null || ("").equals(s.trim())) {
             throw new IllegalArgumentException("Операнд не должен быть пустым!");
         }
@@ -112,6 +112,20 @@ public abstract class ActionInSS {
 
         if((s.length() > 1) && (s.charAt(0) == '0')) {
             throw new IllegalArgumentException("Операнд не может начинаться с 0!");
+        }
+    }
+
+    /**
+     * Проверка валидности строки
+     * @param s строка
+     * @return валидность
+     */
+    public boolean isValid(String s) {
+        try {
+            validate(s);
+            return true;
+        } catch (Exception ex) {
+            return false;
         }
     }
 

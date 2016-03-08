@@ -23,8 +23,8 @@ public class MultiplicationInSS extends AdditionInSS {
             tempRes = new StringBuilder();
             pl = 0;
             for(int j = x.length - 1; j >= 0; j--) {
-                a = characters.indexOf(x[j]);
-                b = characters.indexOf(y[i]);
+                a = characters.indexOf(Character.toUpperCase(x[j]));
+                b = characters.indexOf(Character.toUpperCase(y[i]));
                 res = a * b + pl;
                 pl = res/ss;
                 tempRes.insert(0, characters.charAt(res%ss));

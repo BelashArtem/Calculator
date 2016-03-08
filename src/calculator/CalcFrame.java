@@ -5,6 +5,9 @@ import actions.AdditionInSS;
 import actions.MultiplicationInSS;
 
 import javax.swing.*;
+import javax.swing.text.AttributeSet;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.PlainDocument;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 
@@ -32,6 +35,7 @@ public class CalcFrame extends JFrame {
 
     private int ss = 10;
     private ResultAction resultAction = null;
+    private ActionInSS action = null;
 
     public CalcFrame() {
         this(10, ADDITION);
@@ -55,26 +59,29 @@ public class CalcFrame extends JFrame {
      * @param actionType действие
      */
     private void setAction(int actionType) {
+        ActionInSS tempAction = null;
         switch (actionType) {
             case ADDITION:
-                resultAction.setAction(new AdditionInSS(ss));
+                tempAction = new AdditionInSS(ss);
                 break;
             case MULTIPLICATION:
-                resultAction.setAction(new MultiplicationInSS(ss));
+                tempAction = new MultiplicationInSS(ss);
                 break;
             //Можно добавлять новые действия
             default:
-                resultAction.setAction(new AdditionInSS(ss));
+                tempAction = new AdditionInSS(ss);
                 break;
         }
+        action = tempAction;
+        resultAction.setAction(action);
     }
 
     private void createGUI() {
         setTitle(resultAction.getActionName() + " в " + ss + "-ичной системе счисления");
 
-        tfX = createTextField(XY_WIDTH);
-        tfY = createTextField(XY_WIDTH);
-        tfResult = createTextField(RESULT_WIDTH);
+        tfX = createTextField(XY_WIDTH, true);
+        tfY = createTextField(XY_WIDTH, true);
+        tfResult = createTextField(RESULT_WIDTH, false);
 
         btMultiply = new JButton(resultAction);
 
@@ -100,9 +107,21 @@ public class CalcFrame extends JFrame {
      * @param width ширина
      * @return настроенный объект JTextField
      */
-    private JTextField createTextField(int width) {
+    private JTextField createTextField(int width, boolean inputControl) {
         JTextField tf = new JTextField();
         tf.setPreferredSize(new Dimension(width, (int)tf.getPreferredSize().getHeight()));
+        if (inputControl) {
+            tf.setDocument(new PlainDocument() {
+                ActionInSS act = resultAction.getAction();
+                @Override
+                public void insertString(int offs, String str, AttributeSet a) throws BadLocationException {
+                    String text = tf.getText() + str;
+                    if (text == null || text.length() == 0 || action.isValid(text)) {
+                        super.insertString(offs, str, a);
+                    }
+                }
+            });
+        }
         return tf;
     }
 
@@ -126,6 +145,10 @@ public class CalcFrame extends JFrame {
             this.action = action;
         }
 
+        public ActionInSS getAction() {
+            return action;
+        }
+
         public String getActionSymbol() {
             return action.getSymbol();
         }
@@ -137,7 +160,6 @@ public class CalcFrame extends JFrame {
         @Override
         public void actionPerformed(ActionEvent e) {
             tfResult.setText(action.calculate(tfX.getText(), tfY.getText()));
-
         }
     }
 

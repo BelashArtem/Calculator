@@ -5,6 +5,6 @@ package calculator;
  */
 public class Calculator {
     public static void main(String[] args) {
-        CalcFrame frame = new CalcFrame(27, CalcFrame.ADDITION);
+        CalcFrame frame = new CalcFrame(2, CalcFrame.MULTIPLICATION);
     }
 }

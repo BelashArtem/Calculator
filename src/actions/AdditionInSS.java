@@ -21,8 +21,8 @@ public class AdditionInSS extends ActionInSS {
         int maxLength = (x.length > y.length) ? x.length : y.length;
         int a, b, res, pl = 0;
         for (int i = 0; i < maxLength; i++) {
-            a = (x.length > i) ? characters.indexOf(x[x.length - i - 1]) : 0;
-            b = (y.length > i) ? characters.indexOf(y[y.length - i - 1]) : 0;
+            a = (x.length > i) ? characters.indexOf(Character.toUpperCase(x[x.length - i - 1])) : 0;
+            b = (y.length > i) ? characters.indexOf(Character.toUpperCase(y[y.length - i - 1])) : 0;
             res = a + b + pl;
             pl = res/ss;
             result.insert(0, characters.charAt(res%ss));
