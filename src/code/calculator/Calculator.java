@@ -1,4 +1,4 @@
-package calculator;
+package code.calculator;
 
 /**
  * Created by Артем on 04.03.2016.

@@ -1,4 +1,4 @@
-package actions;
+package code.actions;
 
 /**
  * Created by Артем on 07.03.2016.

@@ -1,15 +1,18 @@
-package calculator;
+package code.calculator;
 
-import actions.ActionInSS;
-import actions.AdditionInSS;
-import actions.MultiplicationInSS;
+import code.actions.ActionInSS;
+import code.actions.AdditionInSS;
+import code.actions.MultiplicationInSS;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.text.AttributeSet;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.PlainDocument;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.io.File;
+import java.io.IOException;
 
 /**
  * Created by Артем on 04.03.2016.
@@ -78,6 +81,12 @@ public class CalcFrame extends JFrame {
 
     private void createGUI() {
         setTitle(resultAction.getActionName() + " в " + ss + "-ичной системе счисления");
+
+        try {
+            setIconImage(ImageIO.read(new File("src\\resource\\icons\\calc_icon.png")));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         tfX = createTextField(XY_WIDTH, true);
         tfY = createTextField(XY_WIDTH, true);
