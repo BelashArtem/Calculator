@@ -20,11 +20,10 @@ import java.io.IOException;
 public class CalcFrame extends JFrame {
 
     //Компоненты
-    private JTextField tfX = null;
-    private JTextField tfY = null;
-    private JTextField tfResult = null;
-    private JButton btMultiply = null;
-    private JTextField statusBar = null;
+    private JTextField tfX;
+    private JTextField tfY;
+    private JTextField tfResult;
+    private JButton btMultiply;
 
     //Размеры компонентов
     private static final int XY_WIDTH = 300;
@@ -37,11 +36,11 @@ public class CalcFrame extends JFrame {
     public static final int MULTIPLICATION = 1;
 
     private int ss = 10;
-    private ResultAction resultAction = null;
-    private ActionInSS action = null;
+    private ResultAction resultAction;
+    private ActionInSS action;
 
     public CalcFrame() {
-        this(10, ADDITION);
+        this(ActionInSS.DEFAULT_SS, ADDITION);
     }
 
     public CalcFrame(int ss, int actionType) {
@@ -125,7 +124,7 @@ public class CalcFrame extends JFrame {
                 @Override
                 public void insertString(int offs, String str, AttributeSet a) throws BadLocationException {
                     String text = tf.getText() + str;
-                    if (text == null || text.length() == 0 || action.isValid(text)) {
+                    if (text.length() == 0 || action.isValid(text)) {
                         super.insertString(offs, str.toUpperCase(), a);
                     }
                 }

@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db6e01bc-0f74-484b-b2a6-da2f82f7f102" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Calculator/code/calculator/Calculator.class" afterPath="$PROJECT_DIR$/out/production/Calculator/code/calculator/Calculator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Calculator/code/actions/ActionInSS.class" afterPath="$PROJECT_DIR$/out/production/Calculator/code/actions/ActionInSS.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Calculator/code/calculator/CalcFrame$1.class" afterPath="$PROJECT_DIR$/out/production/Calculator/code/calculator/CalcFrame$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Calculator/code/calculator/CalcFrame$ResultAction.class" afterPath="$PROJECT_DIR$/out/production/Calculator/code/calculator/CalcFrame$ResultAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Calculator/code/calculator/CalcFrame.class" afterPath="$PROJECT_DIR$/out/production/Calculator/code/calculator/CalcFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Calculator/code/calculator/Calculator$1.class" afterPath="$PROJECT_DIR$/out/production/Calculator/code/calculator/Calculator$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/code/actions/ActionInSS.java" afterPath="$PROJECT_DIR$/src/code/actions/ActionInSS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/code/actions/MultiplicationInSS.java" afterPath="$PROJECT_DIR$/src/code/actions/MultiplicationInSS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/code/calculator/CalcFrame.java" afterPath="$PROJECT_DIR$/src/code/calculator/CalcFrame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/code/calculator/Calculator.java" afterPath="$PROJECT_DIR$/src/code/calculator/Calculator.java" />
     </list>
     <ignored path="Calculator.iws" />
@@ -29,8 +36,8 @@
       <file leaf-file-name="Calculator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/code/calculator/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32">
-              <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.408">
+              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
               <folding>
                 <element signature="e#260#261#0" expanded="true" />
                 <element signature="e#346#347#0" expanded="true" />
@@ -43,8 +50,9 @@
         <entry file="file://$PROJECT_DIR$/src/code/calculator/CalcFrame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
               <folding>
+                <element signature="e#1144#1145#0" expanded="true" />
                 <element signature="method#setSs#0;class#CalcFrame#0" expanded="false" />
                 <element signature="method#setAction#0;class#CalcFrame#0" expanded="false" />
               </folding>
@@ -52,12 +60,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActionInSS.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/code/actions/ActionInSS.java">
+      <file leaf-file-name="MultiplicationInSS.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/code/actions/MultiplicationInSS.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-              <folding />
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+              <folding>
+                <element signature="method#appendZeroes#0;class#MultiplicationInSS#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,14 +82,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultiplicationInSS.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/code/actions/MultiplicationInSS.java">
+      <file leaf-file-name="ActionInSS.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/code/actions/ActionInSS.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
-              <folding>
-                <element signature="method#appendZeroes#0;class#MultiplicationInSS#0" expanded="false" />
-              </folding>
+              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -119,10 +127,11 @@
         <option value="$PROJECT_DIR$/src/calculator/CalcFrame.java" />
         <option value="$PROJECT_DIR$/src/java/calculator/Calculator.java" />
         <option value="$PROJECT_DIR$/src/java/calculator/CalcFrame.java" />
-        <option value="$PROJECT_DIR$/src/code/calculator/CalcFrame.java" />
-        <option value="$PROJECT_DIR$/src/code/actions/MultiplicationInSS.java" />
         <option value="$PROJECT_DIR$/src/code/utils/ActionInSSUtils.java" />
+        <option value="$PROJECT_DIR$/src/code/actions/ActionInSS.java" />
+        <option value="$PROJECT_DIR$/src/code/calculator/CalcFrame.java" />
         <option value="$PROJECT_DIR$/src/code/calculator/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/code/actions/MultiplicationInSS.java" />
       </list>
     </option>
   </component>
@@ -542,7 +551,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -607,6 +616,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
+            <element signature="e#1144#1145#0" expanded="true" />
             <element signature="method#setSs#0;class#CalcFrame#0" expanded="false" />
             <element signature="method#setAction#0;class#CalcFrame#0" expanded="false" />
           </folding>
@@ -655,6 +665,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
+            <element signature="e#1144#1145#0" expanded="true" />
             <element signature="method#setSs#0;class#CalcFrame#0" expanded="false" />
             <element signature="method#setAction#0;class#CalcFrame#0" expanded="false" />
           </folding>
@@ -703,6 +714,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
           <folding>
+            <element signature="e#1144#1145#0" expanded="true" />
             <element signature="method#setSs#0;class#CalcFrame#0" expanded="false" />
             <element signature="method#setAction#0;class#CalcFrame#0" expanded="false" />
           </folding>
@@ -751,6 +763,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#1144#1145#0" expanded="true" />
             <element signature="method#setSs#0;class#CalcFrame#0" expanded="false" />
             <element signature="method#setAction#0;class#CalcFrame#0" expanded="false" />
           </folding>
@@ -799,6 +812,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#1144#1145#0" expanded="true" />
             <element signature="method#setSs#0;class#CalcFrame#0" expanded="false" />
             <element signature="method#setAction#0;class#CalcFrame#0" expanded="false" />
           </folding>
@@ -829,6 +843,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
           <folding>
+            <element signature="e#1144#1145#0" expanded="true" />
             <element signature="method#setSs#0;class#CalcFrame#0" expanded="false" />
             <element signature="method#setAction#0;class#CalcFrame#0" expanded="false" />
           </folding>
@@ -877,10 +892,38 @@
         <state />
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/src.zip!/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63733333">
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/code/actions/ActionInSS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/code/calculator/CalcFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+          <folding>
+            <element signature="e#1144#1145#0" expanded="true" />
+            <element signature="method#setSs#0;class#CalcFrame#0" expanded="false" />
+            <element signature="method#setAction#0;class#CalcFrame#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/code/actions/MultiplicationInSS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
           <folding>
             <element signature="method#appendZeroes#0;class#MultiplicationInSS#0" expanded="false" />
           </folding>
@@ -895,29 +938,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/code/actions/ActionInSS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/code/calculator/CalcFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="method#setSs#0;class#CalcFrame#0" expanded="false" />
-            <element signature="method#setAction#0;class#CalcFrame#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/code/calculator/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.408">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
           <folding>
             <element signature="e#260#261#0" expanded="true" />
             <element signature="e#346#347#0" expanded="true" />

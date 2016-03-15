@@ -20,7 +20,7 @@ public abstract class ActionInSS {
     /**
      * Система счисления по умолчанию
      */
-    private static final int DEFAULT_SS = 10;
+    public static final int DEFAULT_SS = 10;
     /**
      * Максимально большой алфавит
      */

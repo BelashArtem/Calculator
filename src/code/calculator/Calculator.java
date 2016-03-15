@@ -13,6 +13,5 @@ public class Calculator {
                 CalcFrame frame = new CalcFrame(2, CalcFrame.ADDITION);
             }
         });
-
     }
 }
