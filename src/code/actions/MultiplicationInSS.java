@@ -5,7 +5,7 @@ package code.actions;
  */
 public class MultiplicationInSS extends ActionInSS {
 
-    AdditionInSS addAction = null;
+    AdditionInSS addAction;
 
     public MultiplicationInSS() {
         super();
