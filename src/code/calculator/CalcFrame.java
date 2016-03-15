@@ -11,6 +11,7 @@ import javax.swing.text.BadLocationException;
 import javax.swing.text.PlainDocument;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 
@@ -92,6 +93,13 @@ public class CalcFrame extends JFrame {
         tfResult = createTextField(RESULT_WIDTH, false);
 
         btMultiply = new JButton(resultAction);
+
+        //Срабатвыание кнопки "=" по Enter
+        int condition = JPanel.WHEN_IN_FOCUSED_WINDOW;
+        InputMap inputMap = ((JPanel) getContentPane()).getInputMap(condition);
+        ActionMap actionMap = ((JPanel) getContentPane()).getActionMap();
+        inputMap.put(KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0), "enter");
+        actionMap.put("enter", resultAction);
 
         JPanel panel = new JPanel(new FlowLayout());
 
