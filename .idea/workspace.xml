@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db6e01bc-0f74-484b-b2a6-da2f82f7f102" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Calculator/code/calculator/CalcFrame$1.class" afterPath="$PROJECT_DIR$/out/production/Calculator/code/calculator/CalcFrame$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Calculator/code/calculator/CalcFrame$ResultAction.class" afterPath="$PROJECT_DIR$/out/production/Calculator/code/calculator/CalcFrame$ResultAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Calculator/code/calculator/CalcFrame.class" afterPath="$PROJECT_DIR$/out/production/Calculator/code/calculator/CalcFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Calculator/code/calculator/Calculator$1.class" afterPath="$PROJECT_DIR$/out/production/Calculator/code/calculator/Calculator$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/code/actions/ActionInSS.java" afterPath="$PROJECT_DIR$/src/code/actions/ActionInSS.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/code/calculator/CalcFrame.java" afterPath="$PROJECT_DIR$/src/code/calculator/CalcFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/code/calculator/Calculator.java" afterPath="$PROJECT_DIR$/src/code/calculator/Calculator.java" />
     </list>
     <ignored path="Calculator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,37 +35,19 @@
         <entry file="file://$PROJECT_DIR$/src/code/calculator/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding>
-                <element signature="e#260#261#0" expanded="true" />
-                <element signature="e#346#347#0" expanded="true" />
-              </folding>
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalcFrame.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/code/calculator/CalcFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45866665">
-              <caret line="96" column="42" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="42" />
-              <folding>
-                <element signature="e#1123#1124#0" expanded="true" />
-                <element signature="e#1176#1177#0" expanded="true" />
-                <element signature="method#setSs#0;class#CalcFrame#0" expanded="false" />
-                <element signature="method#setAction#0;class#CalcFrame#0" expanded="false" />
-                <element signature="method#createTextField#0;class#CalcFrame#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MultiplicationInSS.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MultiplicationInSS.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/code/actions/MultiplicationInSS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state vertical-scroll-proportion="1.4506667">
+              <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
               <folding>
+                <element signature="docComment;method#appendZeroes#0;class#MultiplicationInSS#0" expanded="false" />
                 <element signature="method#appendZeroes#0;class#MultiplicationInSS#0" expanded="false" />
               </folding>
             </state>
@@ -79,8 +68,42 @@
         <entry file="file://$PROJECT_DIR$/src/code/actions/ActionInSS.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-              <folding />
+              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+              <folding>
+                <element signature="docComment;field#ss#0;class#ActionInSS#0" expanded="false" />
+                <element signature="docComment;field#characters#0;class#ActionInSS#0" expanded="false" />
+                <element signature="docComment;field#MAX_LENGTH#0;class#ActionInSS#0" expanded="false" />
+                <element signature="docComment;field#DEFAULT_SS#0;class#ActionInSS#0" expanded="false" />
+                <element signature="docComment;field#MAX_ALPH#0;class#ActionInSS#0" expanded="false" />
+                <element signature="docComment;method#getSs#0;class#ActionInSS#0" expanded="false" />
+                <element signature="docComment;method#getCharacters#0;class#ActionInSS#0" expanded="false" />
+                <element signature="docComment;method#setSs#0;class#ActionInSS#0" expanded="false" />
+                <element signature="method#setSs#0;class#ActionInSS#0" expanded="false" />
+                <element signature="docComment;method#updateCharacters#0;class#ActionInSS#0" expanded="false" />
+                <element signature="docComment;method#calculate#0;class#ActionInSS#0" expanded="false" />
+                <element signature="method#calculate#0;class#ActionInSS#0" expanded="false" />
+                <element signature="docComment;method#validate#0;class#ActionInSS#0" expanded="false" />
+                <element signature="method#validate#0;class#ActionInSS#0" expanded="false" />
+                <element signature="docComment;method#isValid#0;class#ActionInSS#0" expanded="false" />
+                <element signature="method#isValid#0;class#ActionInSS#0" expanded="false" />
+                <element signature="docComment;method#calculateWithValidArgs#0;class#ActionInSS#0" expanded="false" />
+                <element signature="docComment;method#getSymbol#0;class#ActionInSS#0" expanded="false" />
+                <element signature="docComment;method#getName#0;class#ActionInSS#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CalcFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/code/calculator/CalcFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="2.3448277">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="method#setSs#0;class#CalcFrame#0" expanded="false" />
+                <element signature="method#setAction#0;class#CalcFrame#0" expanded="false" />
+                <element signature="method#createTextField#0;class#CalcFrame#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,10 +144,10 @@
         <option value="$PROJECT_DIR$/src/java/calculator/Calculator.java" />
         <option value="$PROJECT_DIR$/src/java/calculator/CalcFrame.java" />
         <option value="$PROJECT_DIR$/src/code/utils/ActionInSSUtils.java" />
-        <option value="$PROJECT_DIR$/src/code/actions/ActionInSS.java" />
-        <option value="$PROJECT_DIR$/src/code/calculator/Calculator.java" />
         <option value="$PROJECT_DIR$/src/code/actions/MultiplicationInSS.java" />
+        <option value="$PROJECT_DIR$/src/code/calculator/Calculator.java" />
         <option value="$PROJECT_DIR$/src/code/calculator/CalcFrame.java" />
+        <option value="$PROJECT_DIR$/src/code/actions/ActionInSS.java" />
       </list>
     </option>
   </component>
@@ -597,10 +620,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -609,8 +629,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="e#1123#1124#0" expanded="true" />
-            <element signature="e#1176#1177#0" expanded="true" />
             <element signature="method#setSs#0;class#CalcFrame#0" expanded="false" />
             <element signature="method#setAction#0;class#CalcFrame#0" expanded="false" />
             <element signature="method#createTextField#0;class#CalcFrame#0" expanded="false" />
@@ -622,7 +640,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="docComment;field#ss#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;field#characters#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;field#MAX_LENGTH#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;field#DEFAULT_SS#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;field#MAX_ALPH#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#getSs#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#getCharacters#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#setSs#0;class#ActionInSS#0" expanded="false" />
+            <element signature="method#setSs#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#updateCharacters#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#calculate#0;class#ActionInSS#0" expanded="false" />
+            <element signature="method#calculate#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#validate#0;class#ActionInSS#0" expanded="false" />
+            <element signature="method#validate#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#isValid#0;class#ActionInSS#0" expanded="false" />
+            <element signature="method#isValid#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#calculateWithValidArgs#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#getSymbol#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#getName#0;class#ActionInSS#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -639,6 +677,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
           <folding>
+            <element signature="docComment;method#appendZeroes#0;class#MultiplicationInSS#0" expanded="false" />
             <element signature="method#appendZeroes#0;class#MultiplicationInSS#0" expanded="false" />
           </folding>
         </state>
@@ -648,10 +687,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding>
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -660,8 +696,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
-            <element signature="e#1123#1124#0" expanded="true" />
-            <element signature="e#1176#1177#0" expanded="true" />
             <element signature="method#setSs#0;class#CalcFrame#0" expanded="false" />
             <element signature="method#setAction#0;class#CalcFrame#0" expanded="false" />
             <element signature="method#createTextField#0;class#CalcFrame#0" expanded="false" />
@@ -673,7 +707,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="docComment;field#ss#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;field#characters#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;field#MAX_LENGTH#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;field#DEFAULT_SS#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;field#MAX_ALPH#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#getSs#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#getCharacters#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#setSs#0;class#ActionInSS#0" expanded="false" />
+            <element signature="method#setSs#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#updateCharacters#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#calculate#0;class#ActionInSS#0" expanded="false" />
+            <element signature="method#calculate#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#validate#0;class#ActionInSS#0" expanded="false" />
+            <element signature="method#validate#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#isValid#0;class#ActionInSS#0" expanded="false" />
+            <element signature="method#isValid#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#calculateWithValidArgs#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#getSymbol#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#getName#0;class#ActionInSS#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -690,6 +744,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="docComment;method#appendZeroes#0;class#MultiplicationInSS#0" expanded="false" />
             <element signature="method#appendZeroes#0;class#MultiplicationInSS#0" expanded="false" />
           </folding>
         </state>
@@ -699,10 +754,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -711,8 +763,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
           <folding>
-            <element signature="e#1123#1124#0" expanded="true" />
-            <element signature="e#1176#1177#0" expanded="true" />
             <element signature="method#setSs#0;class#CalcFrame#0" expanded="false" />
             <element signature="method#setAction#0;class#CalcFrame#0" expanded="false" />
             <element signature="method#createTextField#0;class#CalcFrame#0" expanded="false" />
@@ -724,7 +774,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="docComment;field#ss#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;field#characters#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;field#MAX_LENGTH#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;field#DEFAULT_SS#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;field#MAX_ALPH#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#getSs#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#getCharacters#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#setSs#0;class#ActionInSS#0" expanded="false" />
+            <element signature="method#setSs#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#updateCharacters#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#calculate#0;class#ActionInSS#0" expanded="false" />
+            <element signature="method#calculate#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#validate#0;class#ActionInSS#0" expanded="false" />
+            <element signature="method#validate#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#isValid#0;class#ActionInSS#0" expanded="false" />
+            <element signature="method#isValid#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#calculateWithValidArgs#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#getSymbol#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#getName#0;class#ActionInSS#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -741,6 +811,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
           <folding>
+            <element signature="docComment;method#appendZeroes#0;class#MultiplicationInSS#0" expanded="false" />
             <element signature="method#appendZeroes#0;class#MultiplicationInSS#0" expanded="false" />
           </folding>
         </state>
@@ -750,10 +821,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -762,8 +830,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1123#1124#0" expanded="true" />
-            <element signature="e#1176#1177#0" expanded="true" />
             <element signature="method#setSs#0;class#CalcFrame#0" expanded="false" />
             <element signature="method#setAction#0;class#CalcFrame#0" expanded="false" />
             <element signature="method#createTextField#0;class#CalcFrame#0" expanded="false" />
@@ -775,7 +841,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
+          <folding>
+            <element signature="docComment;field#ss#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;field#characters#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;field#MAX_LENGTH#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;field#DEFAULT_SS#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;field#MAX_ALPH#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#getSs#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#getCharacters#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#setSs#0;class#ActionInSS#0" expanded="false" />
+            <element signature="method#setSs#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#updateCharacters#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#calculate#0;class#ActionInSS#0" expanded="false" />
+            <element signature="method#calculate#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#validate#0;class#ActionInSS#0" expanded="false" />
+            <element signature="method#validate#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#isValid#0;class#ActionInSS#0" expanded="false" />
+            <element signature="method#isValid#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#calculateWithValidArgs#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#getSymbol#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#getName#0;class#ActionInSS#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -792,6 +878,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
           <folding>
+            <element signature="docComment;method#appendZeroes#0;class#MultiplicationInSS#0" expanded="false" />
             <element signature="method#appendZeroes#0;class#MultiplicationInSS#0" expanded="false" />
           </folding>
         </state>
@@ -801,10 +888,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding>
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -813,8 +897,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1123#1124#0" expanded="true" />
-            <element signature="e#1176#1177#0" expanded="true" />
             <element signature="method#setSs#0;class#CalcFrame#0" expanded="false" />
             <element signature="method#setAction#0;class#CalcFrame#0" expanded="false" />
             <element signature="method#createTextField#0;class#CalcFrame#0" expanded="false" />
@@ -834,10 +916,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding>
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -846,8 +925,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
           <folding>
-            <element signature="e#1123#1124#0" expanded="true" />
-            <element signature="e#1176#1177#0" expanded="true" />
             <element signature="method#setSs#0;class#CalcFrame#0" expanded="false" />
             <element signature="method#setAction#0;class#CalcFrame#0" expanded="false" />
             <element signature="method#createTextField#0;class#CalcFrame#0" expanded="false" />
@@ -905,21 +982,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/code/actions/ActionInSS.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/src.zip!/java/awt/event/KeyEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.33236995">
+          <caret line="1196" column="23" selection-start-line="1196" selection-start-column="18" selection-end-line="1196" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/code/actions/MultiplicationInSS.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <element signature="method#appendZeroes#0;class#MultiplicationInSS#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="3.4">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/src.zip!/java/awt/EventQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="53.136">
+          <caret line="1262" column="23" selection-start-line="1262" selection-start-column="23" selection-end-line="1262" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -931,27 +1014,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/code/calculator/Calculator.java">
+    <entry file="file://$PROJECT_DIR$/src/code/actions/ActionInSS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
           <folding>
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
+            <element signature="docComment;field#ss#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;field#characters#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;field#MAX_LENGTH#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;field#DEFAULT_SS#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;field#MAX_ALPH#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#getSs#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#getCharacters#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#setSs#0;class#ActionInSS#0" expanded="false" />
+            <element signature="method#setSs#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#updateCharacters#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#calculate#0;class#ActionInSS#0" expanded="false" />
+            <element signature="method#calculate#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#validate#0;class#ActionInSS#0" expanded="false" />
+            <element signature="method#validate#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#isValid#0;class#ActionInSS#0" expanded="false" />
+            <element signature="method#isValid#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#calculateWithValidArgs#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#getSymbol#0;class#ActionInSS#0" expanded="false" />
+            <element signature="docComment;method#getName#0;class#ActionInSS#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/code/calculator/CalcFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45866665">
-          <caret line="96" column="42" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="42" />
+        <state vertical-scroll-proportion="2.3448277">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1123#1124#0" expanded="true" />
-            <element signature="e#1176#1177#0" expanded="true" />
             <element signature="method#setSs#0;class#CalcFrame#0" expanded="false" />
             <element signature="method#setAction#0;class#CalcFrame#0" expanded="false" />
             <element signature="method#createTextField#0;class#CalcFrame#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/code/calculator/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/code/actions/MultiplicationInSS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4506667">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+          <folding>
+            <element signature="docComment;method#appendZeroes#0;class#MultiplicationInSS#0" expanded="false" />
+            <element signature="method#appendZeroes#0;class#MultiplicationInSS#0" expanded="false" />
           </folding>
         </state>
       </provider>

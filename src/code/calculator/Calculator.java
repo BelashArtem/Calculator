@@ -7,11 +7,8 @@ import java.awt.*;
  */
 public class Calculator {
     public static void main(String[] args) {
-        EventQueue.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                CalcFrame frame = new CalcFrame(2, CalcFrame.ADDITION);
-            }
+        EventQueue.invokeLater(() -> {
+            new CalcFrame(36, CalcFrame.MULTIPLICATION);
         });
     }
 }

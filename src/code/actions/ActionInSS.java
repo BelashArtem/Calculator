@@ -16,7 +16,7 @@ public abstract class ActionInSS {
     /**
      * Максимальная длина операнда
      */
-    private static final int MAX_LENGTH = 32;
+    public static final int MAX_LENGTH = 32;
     /**
      * Система счисления по умолчанию
      */
@@ -24,7 +24,7 @@ public abstract class ActionInSS {
     /**
      * Максимально большой алфавит
      */
-    private static final String MAX_ALPH = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    public static final String MAX_ALPH = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     public ActionInSS() {
         this(DEFAULT_SS);

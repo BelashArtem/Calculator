@@ -24,19 +24,18 @@ public class CalcFrame extends JFrame {
     private JTextField tfX;
     private JTextField tfY;
     private JTextField tfResult;
-    private JButton btMultiply;
 
     //Размеры компонентов
-    private static final int XY_WIDTH = 300;
-    private static final int RESULT_WIDTH = 620;
-    private static final int FRAME_WIDTH = 650;
+    private static final int XY_WIDTH = ActionInSS.MAX_LENGTH * 12;//~300;
+    private static final int RESULT_WIDTH = XY_WIDTH * 2 + 20;//620;
+    private static final int FRAME_WIDTH = RESULT_WIDTH + 30;//650;
     private static final int FRAME_HEIGHT = 115;
 
     //Действия калькулятора
     public static final int ADDITION = 0;
     public static final int MULTIPLICATION = 1;
 
-    private int ss = 10;
+    private int ss;
     private ResultAction resultAction;
     private ActionInSS action;
 
@@ -92,8 +91,6 @@ public class CalcFrame extends JFrame {
         tfY = createTextField(XY_WIDTH, true);
         tfResult = createTextField(RESULT_WIDTH, false);
 
-        btMultiply = new JButton(resultAction);
-
         //Срабатвыание кнопки "=" по Enter
         int condition = JPanel.WHEN_IN_FOCUSED_WINDOW;
         InputMap inputMap = ((JPanel) getContentPane()).getInputMap(condition);
@@ -106,7 +103,7 @@ public class CalcFrame extends JFrame {
         panel.add(tfX);
         panel.add(new JLabel(" " + resultAction.getActionSymbol() + " "));
         panel.add(tfY);
-        panel.add(btMultiply);
+        panel.add(new JButton(resultAction));
         panel.add(tfResult);
 
         getContentPane().add(panel);
