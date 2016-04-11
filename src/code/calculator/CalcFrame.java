@@ -1,6 +1,7 @@
 package code.calculator;
 
 import code.actions.ActionInSS;
+import code.actions.ActionType;
 import code.actions.AdditionInSS;
 import code.actions.MultiplicationInSS;
 
@@ -20,30 +21,24 @@ import java.io.IOException;
  */
 public class CalcFrame extends JFrame {
 
-    //Компоненты
-    private JTextField tfX;
-    private JTextField tfY;
-    private JTextField tfResult;
-
     //Размеры компонентов
     private static final int XY_WIDTH = ActionInSS.MAX_LENGTH * 12;//~300;
     private static final int RESULT_WIDTH = XY_WIDTH * 2 + 20;//620;
     private static final int FRAME_WIDTH = RESULT_WIDTH + 30;//650;
     private static final int FRAME_HEIGHT = 115;
-
-    //Действия калькулятора
-    public static final int ADDITION = 0;
-    public static final int MULTIPLICATION = 1;
-
+    //Компоненты
+    private JTextField tfX;
+    private JTextField tfY;
+    private JTextField tfResult;
     private int ss;
     private ResultAction resultAction;
     private ActionInSS action;
 
     public CalcFrame() {
-        this(ActionInSS.DEFAULT_SS, ADDITION);
+        this(ActionInSS.DEFAULT_SS, ActionType.ADDITION);
     }
 
-    public CalcFrame(int ss, int actionType) {
+    public CalcFrame(int ss, ActionType actionType) {
         super();
         resultAction = new ResultAction();
         setSs(ss);
@@ -58,10 +53,11 @@ public class CalcFrame extends JFrame {
 
     /**
      * Установка соответствующего действия
+     *
      * @param actionType действие
      */
-    private void setAction(int actionType) {
-        ActionInSS tempAction = null;
+    private void setAction(ActionType actionType) {
+        ActionInSS tempAction;
         switch (actionType) {
             case ADDITION:
                 tempAction = new AdditionInSS(ss);
@@ -117,15 +113,15 @@ public class CalcFrame extends JFrame {
 
     /**
      * Возвращает настроенный объект JTextField
+     *
      * @param width ширина
      * @return настроенный объект JTextField
      */
     private JTextField createTextField(int width, boolean inputControl) {
         JTextField tf = new JTextField();
-        tf.setPreferredSize(new Dimension(width, (int)tf.getPreferredSize().getHeight()));
+        tf.setPreferredSize(new Dimension(width, (int) tf.getPreferredSize().getHeight()));
         if (inputControl) {
             tf.setDocument(new PlainDocument() {
-                ActionInSS act = resultAction.getAction();
                 @Override
                 public void insertString(int offs, String str, AttributeSet a) throws BadLocationException {
                     String text = tf.getText() + str;
@@ -154,12 +150,12 @@ public class CalcFrame extends JFrame {
             action.setSs(ss);
         }
 
-        public void setAction(ActionInSS action) {
-            this.action = action;
-        }
-
         public ActionInSS getAction() {
             return action;
+        }
+
+        public void setAction(ActionInSS action) {
+            this.action = action;
         }
 
         public String getActionSymbol() {

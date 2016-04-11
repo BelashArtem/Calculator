@@ -18,5 +18,8 @@
         <processorPath useClasspath="true" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Calculator" target="" />
+    </bytecodeTargetLevel>
   </component>
 </project>

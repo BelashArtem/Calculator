@@ -24,8 +24,8 @@ public class AdditionInSS extends ActionInSS {
             a = (x.length > i) ? characters.indexOf(Character.toUpperCase(x[x.length - i - 1])) : 0;
             b = (y.length > i) ? characters.indexOf(Character.toUpperCase(y[y.length - i - 1])) : 0;
             res = a + b + pl;
-            pl = res/ss;
-            result.insert(0, characters.charAt(res%ss));
+            pl = res / ss;
+            result.insert(0, characters.charAt(res % ss));
         }
         if (pl != 0) {
             result.insert(0, characters.charAt(pl));

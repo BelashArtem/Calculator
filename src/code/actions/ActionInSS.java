@@ -6,14 +6,6 @@ package code.actions;
 public abstract class ActionInSS {
 
     /**
-     * Основание системы счисления (СС)
-     */
-    protected int ss;
-    /**
-     * Строка алфавита текущей СС
-     */
-    protected String characters;
-    /**
      * Максимальная длина операнда
      */
     public static final int MAX_LENGTH = 32;
@@ -25,6 +17,14 @@ public abstract class ActionInSS {
      * Максимально большой алфавит
      */
     public static final String MAX_ALPH = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    /**
+     * Основание системы счисления (СС)
+     */
+    protected int ss;
+    /**
+     * Строка алфавита текущей СС
+     */
+    protected String characters;
 
     public ActionInSS() {
         this(DEFAULT_SS);
@@ -36,6 +36,7 @@ public abstract class ActionInSS {
 
     /**
      * Возвращает основание СС
+     *
      * @return основание системы счисления
      */
     public int getSs() {
@@ -43,15 +44,8 @@ public abstract class ActionInSS {
     }
 
     /**
-     * Возвращает строку алфавита текущей СС
-     * @return строка
-     */
-    public String getCharacters() {
-        return characters;
-    }
-
-    /**
      * Установка оснвания СС
+     *
      * @param ss основание СС
      * @throws IllegalArgumentException ss должно принадлежать промежутку [2, {MAX_ALPH.length()}]
      */
@@ -64,6 +58,15 @@ public abstract class ActionInSS {
     }
 
     /**
+     * Возвращает строку алфавита текущей СС
+     *
+     * @return строка
+     */
+    public String getCharacters() {
+        return characters;
+    }
+
+    /**
      * Обновление строки алфавита текущей СС
      */
     private void updateCharacters() {
@@ -72,6 +75,7 @@ public abstract class ActionInSS {
 
     /**
      * Производит действие над операндами с предварительной валидацией
+     *
      * @param arg1 операнд 1
      * @param arg2 операнд 2
      * @return результат или сообщение об ошибке
@@ -92,16 +96,17 @@ public abstract class ActionInSS {
 
     /**
      * Метод валидации операнда
+     *
      * @param s операнд
      * @throws IllegalArgumentException не валидный операнд
      */
-    protected void validate(String s) throws IllegalArgumentException {
+    public void validate(String s) throws IllegalArgumentException {
         if (s == null || ("").equals(s.trim())) {
             throw new IllegalArgumentException("Операнд не должен быть пустым!");
         }
 
         if (s.length() > MAX_LENGTH) {
-            throw new IllegalArgumentException("Размер операнда не должен превышать " + MAX_LENGTH + "!");
+            throw new IllegalArgumentException("Размер операнда не должен превышать " + MAX_LENGTH + " символа!");
         }
 
         for (char ch : s.toCharArray()) {
@@ -110,13 +115,14 @@ public abstract class ActionInSS {
             }
         }
 
-        if((s.length() > 1) && (s.charAt(0) == '0')) {
+        if ((s.length() > 1) && (s.charAt(0) == '0')) {
             throw new IllegalArgumentException("Операнд не может начинаться с 0!");
         }
     }
 
     /**
      * Проверка валидности строки
+     *
      * @param s строка
      * @return валидность
      */
@@ -131,6 +137,7 @@ public abstract class ActionInSS {
 
     /**
      * Подсчет результата с учетом того, что оба аргумента валидны
+     *
      * @param arg1 операнд 1
      * @param arg2 операнд 2
      * @return результат
@@ -139,12 +146,14 @@ public abstract class ActionInSS {
 
     /**
      * Получение символа действия
+     *
      * @return символ
      */
     public abstract String getSymbol();
 
     /**
      * Получение названия действия
+     *
      * @return название
      */
     public abstract String getName();

@@ -1,5 +1,7 @@
 package code.calculator;
 
+import code.actions.ActionType;
+
 import java.awt.*;
 
 /**
@@ -8,7 +10,8 @@ import java.awt.*;
 public class Calculator {
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
-            new CalcFrame(36, CalcFrame.MULTIPLICATION);
+//            new CalcFrame(27, ActionType.MULTIPLICATION);
+            new CalcConsole(27, ActionType.MULTIPLICATION);
         });
     }
 }
