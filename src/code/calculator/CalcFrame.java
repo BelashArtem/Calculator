@@ -15,6 +15,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by Артем on 04.03.2016.
@@ -23,7 +26,7 @@ public class CalcFrame extends JFrame {
 
     //Размеры компонентов
     private static final int XY_WIDTH = ActionInSS.MAX_LENGTH * 12;//~300;
-    private static final int RESULT_WIDTH = XY_WIDTH * 2 + 20;//620;
+    private static final int RESULT_WIDTH = XY_WIDTH * 2 + 30;//620;
     private static final int FRAME_WIDTH = RESULT_WIDTH + 30;//650;
     private static final int FRAME_HEIGHT = 115;
     //Компоненты
@@ -34,8 +37,12 @@ public class CalcFrame extends JFrame {
     private ResultAction resultAction;
     private ActionInSS action;
 
-    public CalcFrame() {
-        this(ActionInSS.DEFAULT_SS, ActionType.ADDITION);
+//    public CalcFrame() {
+//        this(ActionInSS.DEFAULT_SS, ActionType.ADDITION);
+//    }
+
+    public CalcFrame(int ss) {
+        this(ss, null);
     }
 
     public CalcFrame(int ss, ActionType actionType) {
@@ -48,7 +55,9 @@ public class CalcFrame extends JFrame {
 
     public void setSs(int ss) {
         this.ss = ss;
-        resultAction.setSs(ss);
+        if (resultAction != null) {
+            resultAction.setSs(ss);
+        }
     }
 
     /**
@@ -58,24 +67,50 @@ public class CalcFrame extends JFrame {
      */
     private void setAction(ActionType actionType) {
         ActionInSS tempAction;
-        switch (actionType) {
-            case ADDITION:
-                tempAction = new AdditionInSS(ss);
-                break;
-            case MULTIPLICATION:
-                tempAction = new MultiplicationInSS(ss);
-                break;
-            //Можно добавлять новые действия
-            default:
-                tempAction = new AdditionInSS(ss);
-                break;
+
+        if(actionType != null) {
+            switch (actionType) {
+                case ADDITION:
+                    tempAction = new AdditionInSS(ss);
+                    break;
+                case MULTIPLICATION:
+                    tempAction = new MultiplicationInSS(ss);
+                    break;
+                //Можно добавлять новые действия
+                default:
+                    tempAction = new AdditionInSS(ss);
+                    break;
+            }
+            action = tempAction;
+            resultAction.setAction(action);
         }
-        action = tempAction;
-        resultAction.setAction(action);
+    }
+
+    private JComboBox cbActionChooser;
+
+    private ArrayList<String> actionSymbols;
+    private ArrayList<ActionInSS> actionsToChoose;
+
+
+    private void fillActionMap() {
+        actionSymbols = new ArrayList<>();
+        actionsToChoose = new ArrayList<>();
+        ActionInSS act;
+
+        //Сложение
+        act = new AdditionInSS(ss);
+        actionSymbols.add(act.getSymbol());
+        actionsToChoose.add(act);
+
+        //Умножение
+        act = new MultiplicationInSS(ss);
+        actionSymbols.add(act.getSymbol());
+        actionsToChoose.add(act);
     }
 
     private void createGUI() {
-        setTitle(resultAction.getActionName() + " в " + ss + "-ичной системе счисления");
+        String actionNameForTitle = (resultAction != null && resultAction.action != null) ? resultAction.getActionName() : "Действия";
+        setTitle(actionNameForTitle + " в " + ss + "-ичной системе счисления");
 
         try {
             setIconImage(ImageIO.read(new File("src\\resource\\icons\\calc_icon.png")));
@@ -97,7 +132,28 @@ public class CalcFrame extends JFrame {
         JPanel panel = new JPanel(new FlowLayout());
 
         panel.add(tfX);
-        panel.add(new JLabel(" " + resultAction.getActionSymbol() + " "));
+
+        if(resultAction != null && resultAction.action != null) {
+            panel.add(new JLabel(" " + resultAction.getActionSymbol() + " "));
+        } else {
+            fillActionMap();
+            cbActionChooser = new JComboBox(actionSymbols.toArray());
+            cbActionChooser.setSelectedIndex(-1);
+            cbActionChooser.addItemListener(e -> {
+                String selectedItem = e.getItem().toString();
+                int index = actionSymbols.indexOf(selectedItem);
+                if (index != -1) {
+                    action = actionsToChoose.get(index);
+                    resultAction.setAction(action);
+                    tfX.setEnabled(true);
+                    tfY.setEnabled(true);
+                }
+            });
+            panel.add(cbActionChooser);
+            tfX.setEnabled(false);
+            tfY.setEnabled(false);
+        }
+
         panel.add(tfY);
         panel.add(new JButton(resultAction));
         panel.add(tfResult);
@@ -138,16 +194,20 @@ public class CalcFrame extends JFrame {
      * Класс события для кнопки "="
      */
     private class ResultAction extends AbstractAction {
-        private ActionInSS action = null;
+        private ActionInSS action;
+        private int ss;
 
         public ResultAction() {
             super();
             putValue(Action.NAME, " = ");
-            action = new AdditionInSS(10);
+//            action = new AdditionInSS(10);
         }
 
         public void setSs(int ss) {
-            action.setSs(ss);
+            this.ss = ss;
+            if (action != null) {
+                action.setSs(ss);
+            }
         }
 
         public ActionInSS getAction() {
@@ -168,7 +228,11 @@ public class CalcFrame extends JFrame {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            tfResult.setText(action.calculate(tfX.getText(), tfY.getText()));
+            if(action != null) {
+                tfResult.setText(action.calculate(tfX.getText(), tfY.getText()));
+            } else {
+                tfResult.setText("Выберите действие!");
+            }
         }
     }
 
