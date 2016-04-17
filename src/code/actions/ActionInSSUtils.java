@@ -55,8 +55,8 @@ public class ActionInSSUtils {
      * @param arg1
      * @param arg2
      */
-    public static char getMaxCoeff(String arg1, String arg2) {
-        MultiplicationInSS mulAction = new MultiplicationInSS();
+    public static char getMaxCoeff(int ss, String arg1, String arg2) {
+        MultiplicationInSS mulAction = new MultiplicationInSS(ss);
 
         String res;
         for (int i = 0; i < ActionInSS.MAX_ALPH.length(); i++) {

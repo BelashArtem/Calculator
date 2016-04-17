@@ -41,7 +41,7 @@ public class DivisionInSS extends ActionInSS {
                 if(ActionInSSUtils.secondIsBigger(ost.toString(), arg2)) {
                     result.append("0");
                 } else {
-                    ch = ActionInSSUtils.getMaxCoeff(arg2, ost.toString());
+                    ch = ActionInSSUtils.getMaxCoeff(ss, arg2, ost.toString());
                     result.append(ch);
                     ost = new StringBuilder(subAction.calculate(ost.toString(), mulAction.calculate(ch + "", arg2)));
                 }

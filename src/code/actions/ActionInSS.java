@@ -88,7 +88,7 @@ public abstract class ActionInSS {
             validate(arg2);
             //Валидация пары аргументов
             validatePairOfArgs(arg1, arg2);
-            //Подсчет результата
+            //Подсчет результата для валидных аргументов
             return calculateWithValidArgs(arg1, arg2);
         } catch (IllegalArgumentException ex) {
             return ex.getMessage();
