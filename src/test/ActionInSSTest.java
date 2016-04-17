@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by Dmitry Murich on 05.04.2016.
  */
-public class AdditionInSSTest {
+public class ActionInSSTest {
     private int ss;
     private ActionInSS actionInSS;
     private String firstOperand;
@@ -83,6 +83,7 @@ public class AdditionInSSTest {
         actionInSS = new DivisionInSS(ss);
         firstOperand = "12345678";
         secondOperand = "893";
+        assertEquals("3D7NO", actionInSS.calculate(firstOperand, secondOperand));
     }
 
     @Test
