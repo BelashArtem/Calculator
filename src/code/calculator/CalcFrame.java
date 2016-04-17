@@ -1,9 +1,6 @@
 package code.calculator;
 
-import code.actions.ActionInSS;
-import code.actions.ActionType;
-import code.actions.AdditionInSS;
-import code.actions.MultiplicationInSS;
+import code.actions.*;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -16,8 +13,6 @@ import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by Артем on 04.03.2016.
@@ -76,6 +71,12 @@ public class CalcFrame extends JFrame {
                 case MULTIPLICATION:
                     tempAction = new MultiplicationInSS(ss);
                     break;
+                case SUBTRACTION:
+                    tempAction = new SubtractionInSS(ss);
+                    break;
+                case DIVISION:
+                    tempAction = new DivisionInSS(ss);
+                    break;
                 //Можно добавлять новые действия
                 default:
                     tempAction = new AdditionInSS(ss);
@@ -104,6 +105,16 @@ public class CalcFrame extends JFrame {
 
         //Умножение
         act = new MultiplicationInSS(ss);
+        actionSymbols.add(act.getSymbol());
+        actionsToChoose.add(act);
+
+        //Вычитание
+        act = new SubtractionInSS(ss);
+        actionSymbols.add(act.getSymbol());
+        actionsToChoose.add(act);
+
+        //Деление
+        act = new DivisionInSS(ss);
         actionSymbols.add(act.getSymbol());
         actionsToChoose.add(act);
     }

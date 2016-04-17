@@ -5,7 +5,7 @@ package code.actions;
  */
 public class MultiplicationInSS extends ActionInSS {
 
-    AdditionInSS addAction;
+    private AdditionInSS addAction;
 
     public MultiplicationInSS() {
         super();
@@ -37,7 +37,7 @@ public class MultiplicationInSS extends ActionInSS {
             if (pl != 0) {
                 tempRes.insert(0, characters.charAt(pl));
             }
-            appendZeroes(tempRes, y.length - i - 1);
+            ActionInSSUtils.appendZeroes(tempRes, y.length - i - 1);
             result = addAction.calculateWithValidArgs(result, tempRes.toString());
         }
 
@@ -54,15 +54,5 @@ public class MultiplicationInSS extends ActionInSS {
         return "Умножение";
     }
 
-    /**
-     * Умножение результата на count порядков с учетом СС
-     *
-     * @param sb    результат
-     * @param count порядок
-     */
-    private void appendZeroes(StringBuilder sb, int count) {
-        for (int i = 0; i < count; i++) {
-            sb.append("0");
-        }
-    }
+
 }

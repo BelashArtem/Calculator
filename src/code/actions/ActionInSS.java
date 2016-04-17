@@ -82,9 +82,12 @@ public abstract class ActionInSS {
      */
     public String calculate(String arg1, String arg2) {
         try {
-            //Валидация аргументов
+            //Валидация 1-го аргумента
             validate(arg1);
+            //Валидация 2-го аргумента
             validate(arg2);
+            //Валидация пары аргументов
+            validatePairOfArgs(arg1, arg2);
             //Подсчет результата
             return calculateWithValidArgs(arg1, arg2);
         } catch (IllegalArgumentException ex) {
@@ -133,6 +136,18 @@ public abstract class ActionInSS {
         } catch (Exception ex) {
             return false;
         }
+    }
+
+    /**
+     * Валидация пары аргументов<br>
+     * Для переопределения в дочерних классах<br>
+     * По умолчанию ничего не делает
+     * @param arg1 первый аргумент
+     * @param arg2 второй аргумент
+     * @throws IllegalArgumentException если пара аргументов не валидна
+     */
+    protected void validatePairOfArgs(String arg1, String arg2) throws IllegalArgumentException {
+        //do nothing
     }
 
     /**

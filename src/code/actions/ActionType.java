@@ -9,5 +9,7 @@ package code.actions;
  */
 public enum ActionType {
     ADDITION,
-    MULTIPLICATION
+    MULTIPLICATION,
+    SUBTRACTION,
+    DIVISION
 }

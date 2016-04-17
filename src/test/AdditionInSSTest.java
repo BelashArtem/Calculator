@@ -38,9 +38,9 @@ public class AdditionInSSTest {
     public void testMultiplicationDecimalSystem() throws Exception {
         ss = 10;
         actionInSS = new MultiplicationInSS(ss);
-        firstOperand = "10000";
-        secondOperand = "20000";
-        assertEquals("200000000", actionInSS.calculate(firstOperand, secondOperand));
+        firstOperand = "1";
+        secondOperand = "2";
+        assertEquals("2", actionInSS.calculate(firstOperand, secondOperand));
     }
 
     @Test

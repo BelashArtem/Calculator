@@ -11,7 +11,7 @@ public class Calculator {
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
             new CalcFrame(10);
-//            new CalcFrame(10, ActionType.MULTIPLICATION);
+//            new CalcFrame(36, ActionType.SUBTRACTION);
 //            new CalcConsole(27, ActionType.MULTIPLICATION);
         });
     }
